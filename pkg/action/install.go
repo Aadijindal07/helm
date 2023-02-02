@@ -400,6 +400,7 @@ func (i *Install) performInstall(c chan<- resultMessage, rel *release.Release, t
 		}
 	}
 
+
 	if len(i.Description) > 0 {
 		rel.SetStatus(release.StatusDeployed, i.Description)
 	} else {
